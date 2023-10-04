@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { useGame } from "../functions/useGame";
 import { GameActionKind } from "../utils/types";
+import rollDice from "public/roll_dice.svg";
 
 const DiceImages = [
     "/dice1.svg",
@@ -14,12 +16,12 @@ export function Dice() {
     return gameState.dice.left.length ? (
         <div>
             {gameState.dice.left.map((dice, index) => (
-                <img
+                <Image
                     key={index}
                     src={DiceImages[dice - 1]}
                     alt={dice.toString()}
-                    height="60px"
-                    width="60px"
+                    height={60}
+                    width={60}
                 />
             ))}
         </div>
@@ -31,8 +33,8 @@ export function Dice() {
                 }
                 id="dice-roll-button"
             >
-                <img src="/roll_dice.svg" alt="roll dice!" />
-                <img src="/roll_dice.svg" alt="roll dice!" />
+                <Image src={rollDice} alt="roll dice!" />
+                <Image src={rollDice} alt="roll dice!" />
             </button>
             <h3>roll the dice!</h3>
         </>

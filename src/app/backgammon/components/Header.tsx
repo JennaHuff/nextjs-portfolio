@@ -1,5 +1,8 @@
+import Image from "next/image";
 import { useGame } from "../functions/useGame";
 import { Dice } from "./Dice";
+import infoIcon from "public/info_icon.svg";
+import githubLogo from "public/github_logo.svg";
 
 export function Header() {
     const { gameState } = useGame();
@@ -8,7 +11,7 @@ export function Header() {
         <div className="header">
             <h3>{gameState.errorMessage}</h3>
             <div className="game-info-header">
-                <h3 id="turn-indicator">{gameState.turn}'s turn, </h3>
+                <h3 id="turn-indicator">{gameState.turn}&apos; turn, </h3>
                 <Dice />
             </div>
             <div className="site-info-header">
@@ -19,8 +22,8 @@ export function Header() {
                         target="_blank"
                     >
                         <button className="header-button">
-                            <img
-                                src="/github_logo.svg"
+                            <Image
+                                src={githubLogo}
                                 alt="github repository link"
                             />
                         </button>
@@ -30,8 +33,8 @@ export function Header() {
                         target="_blank"
                     >
                         <button className="header-button">
-                            <img
-                                src="/info_icon.svg"
+                            <Image
+                                src={infoIcon}
                                 alt="more information about this site"
                             />
                         </button>

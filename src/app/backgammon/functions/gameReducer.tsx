@@ -1,4 +1,4 @@
-import { isAnyMovePossible } from "../components/isAnyMovePossible";
+// import { isAnyMovePossible } from "../components/isAnyMovePossible";
 import { IGameState, GameAction } from "../utils/types";
 
 export function gameReducer(state: IGameState, action: GameAction): IGameState {
@@ -87,7 +87,7 @@ export function gameReducer(state: IGameState, action: GameAction): IGameState {
             if (!state.playerAlreadyRolled) {
                 const dice1 = Math.floor(Math.random() * (7 - 1) + 1);
                 const dice2 = Math.floor(Math.random() * (7 - 1) + 1);
-                isAnyMovePossible([dice1, dice2], state.board, state.turn);
+                // isAnyMovePossible([dice1, dice2], state.board, state.turn);
                 return {
                     ...state,
                     playerAlreadyRolled: true,
