@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+.can-drop {
+    background-color: yellow;
+    opacity: 0.5;
+    color: black;
+}
+.is-over {
+    opacity: 1;
+}
+
+.todo-page {
+    --bg-color-light: #99ccff;
+    --bg-color-dark: #004b96;
+    --paper-color: #ffff99;
+    --buttons-color: #004b96;
+    --text-color: #002346;
+
+    color: var(--text-color);
+    min-height: 100svh;
+    padding-bottom: 8vw;
+    background-color: #006effc7;
+}
+
+input {
+    background-color: transparent;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: var(--buttons-color);
+    color: white;
+    font-weight: bold;
+}
+
+.lists-grid {
+    display: flex;
+
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 375px) {
+    #root {
+        padding-inline: 0;
+    }
+    .lists-grid {
+        margin-inline: 10px;
+    }
+}
