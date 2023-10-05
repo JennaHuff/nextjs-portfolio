@@ -6,6 +6,8 @@ import clsx from "clsx";
 import { TextInputButton } from "./TextInputButton";
 
 const StyledDrop = styled.div`
+    overflow: auto;
+    resize: both;
     display: flex;
     color: black;
     flex-direction: column;
