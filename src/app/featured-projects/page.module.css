@@ -14,8 +14,8 @@
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
-    width: 70vw;
-    height: 40vh;
+    max-width: 70vw;
+    min-height: 40vh;
     gap: 1rem;
     color: black;
 }
@@ -24,23 +24,19 @@
     color: rgb(3, 154, 255);
 }
 
-.currentItemLogo > img {
-    animation: glow2 5s infinite linear, rotation 0.3s 1 linear;
-}
-
-.focusedItem > img {
-    animation: glow2 5s infinite linear, rotation 0.3s 1 linear;
-}
-
 .currentItemLogo {
     position: relative;
-    width: clamp(100px, 15vw, 300px);
     flex: 1 1 45%;
+}
+.currentItemLogo > img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 250px;
 }
 
 .stackCardText {
     flex: 1 1 45%;
-    height: 100%;
     padding-inline: 0.5rem;
     overflow-y: scroll;
 }

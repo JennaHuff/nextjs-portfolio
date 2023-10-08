@@ -9,6 +9,10 @@
 
 .header {
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
 }
 
 .header > ul {
@@ -17,4 +21,10 @@
     list-style: none;
     gap: 1rem;
     font-size: x-large;
+    width: fit-content;
+}
+
+.header > img {
+    height: 50px;
+    width: 50px;
 }

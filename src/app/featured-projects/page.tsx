@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import ViteLogo from "../../../public/Vite Logo.svg";
 import Image from "next/image";
-import video from "/public/todovid.mp4";
+import gif from "../../../public/todo.gif";
 
 interface IProject {
     title: string;
@@ -33,13 +33,19 @@ function ProjectCard({ project }: { project: IProject }) {
         <Link href={project.href}>
             <div className={`${styles.stackCard} clickable`}>
                 <div className={styles.currentItemLogo}>
-                    <Image
+                    {/* <Image
                         fill={true}
                         src={project.image}
                         alt={"project preview image"}
+                    /> */}
+                    <Image
+                        style={{ objectFit: "contain", position: "relative" }}
+                        // fill={true}
+                        src={gif}
+                        alt={"project preview image"}
                     />
                 </div>
-                <video src={video} autoPlay loop muted />
+
                 <div className={styles.stackCardText}>
                     <h1>{project.title}</h1>
                     <p>{project.description}</p>

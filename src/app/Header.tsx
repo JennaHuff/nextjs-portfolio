@@ -3,6 +3,8 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import { usePathname } from "next/navigation";
+import githubLogo from "/public/Github Logo.svg";
+import Image from "next/image";
 
 export default function Header() {
     const currentRoute = usePathname();
@@ -46,6 +48,16 @@ export default function Header() {
                     </Link>
                 </li>
             </ul>
+            <button>✉️</button>
+            <button>
+                <Image
+                    style={{
+                        objectFit: "contain",
+                    }}
+                    src={githubLogo}
+                    alt="my github"
+                />
+            </button>
         </nav>
     );
 }
