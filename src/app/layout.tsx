@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Header from "./Header";
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -15,9 +15,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                <Link href={"/"}>Home</Link>
-                <Link href={"/todo"}>Todo</Link>
-                <Link href={"/backgammon"}>Backgammon</Link>
+                <Header />
                 {children}
             </body>
         </html>

@@ -1,0 +1,49 @@
+.featuredPage {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 8vh;
+}
+
+.stackCard {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 40vh;
+    gap: 1rem;
+    color: black;
+}
+
+.stackCard:hover {
+    color: rgb(3, 154, 255);
+}
+
+.currentItemLogo > img {
+    animation: glow2 5s infinite linear, rotation 0.3s 1 linear;
+}
+
+.focusedItem > img {
+    animation: glow2 5s infinite linear, rotation 0.3s 1 linear;
+}
+
+.currentItemLogo {
+    position: relative;
+    width: clamp(100px, 15vw, 300px);
+    flex: 1 1 45%;
+}
+
+.stackCardText {
+    flex: 1 1 45%;
+    height: 100%;
+    padding-inline: 0.5rem;
+    overflow-y: scroll;
+}
+.stackCardText > p {
+    text-align: justify;
+}
