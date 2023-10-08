@@ -1,0 +1,107 @@
+.stackPage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100svh;
+    width: 100vw;
+    padding-bottom: 8vh;
+}
+
+.stackPage > h1 {
+    margin: 0;
+}
+
+.stackCard {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 40vh;
+    gap: 1rem;
+}
+
+.currentItemLogo > img {
+    animation: glow 2s infinite linear, rotation 0.3s 1 linear;
+}
+
+#focused-item > img {
+    animation: glow2 10s infinite linear;
+}
+
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(10deg);
+    }
+    75% {
+        -webkit-transform: rotate(-5deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 10px #bdaaf1);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #bdaaf1);
+    }
+    100% {
+        filter: drop-shadow(0 0 10px #bdaaf1);
+    }
+}
+@keyframes glow2 {
+    0% {
+        filter: drop-shadow(0 0 7px antiquewhite);
+    }
+    50% {
+        filter: drop-shadow(0 0 15px antiquewhite);
+    }
+    100% {
+        filter: drop-shadow(0 0 7px antiquewhite);
+    }
+}
+
+.stackIcons {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: 100vw;
+    width: fit-content;
+    height: fit-content;
+    gap: 1rem;
+    border-radius: 15px;
+    padding: 1rem;
+}
+.stackIcons > div {
+    height: clamp(40px, 10vw, 100px);
+    /* width: clamp(70px, 10vh, 200px); */
+    width: auto;
+    position: relative;
+}
+.stackIcons > div > img {
+    position: unset !important;
+}
+
+.currentItemLogo {
+    position: relative;
+    width: clamp(100px, 15vw, 300px);
+    flex: 1 1 45%;
+}
+
+.stackCardText {
+    flex: 1 1 45%;
+    height: 100%;
+    padding-inline: 0.5rem;
+    overflow-y: scroll;
+}
+.stackCardText > p {
+    text-align: justify;
+}
