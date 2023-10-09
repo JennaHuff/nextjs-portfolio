@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
     gap: 3rem;
     min-height: 100svh;
     padding-bottom: 8vh;
@@ -43,8 +43,10 @@
     padding: 1rem;
 }
 .stackIcons > div {
-    height: clamp(40px, 10vw, 100px);
-    width: auto;
+    /* height: clamp(40px, 10vw, 100px);
+    width: auto; */
+    height: auto;
+    width: clamp(40px, 10vw, 100px);
     position: relative;
 }
 .stackIcons > div > img {
