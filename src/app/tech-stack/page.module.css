@@ -5,6 +5,7 @@
     align-content: flex-start;
     gap: 3rem;
     min-height: 100svh;
+    padding-top: 2rem;
     padding-bottom: 8vh;
     padding-inline: 3rem;
 }
@@ -97,12 +98,12 @@
 }
 @keyframes glow2 {
     0% {
-        filter: drop-shadow(0 0 4px darkblue);
+        filter: drop-shadow(0 0 2px darkblue);
     }
     50% {
-        filter: drop-shadow(0 0 15px darkblue);
+        filter: drop-shadow(0 0 10px darkblue);
     }
     100% {
-        filter: drop-shadow(0 0 4px darkblue);
+        filter: drop-shadow(0 0 2px darkblue);
     }
 }
