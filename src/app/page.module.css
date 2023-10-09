@@ -10,9 +10,10 @@
 .header {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 2vw;
+    padding-inline: 2vw;
 }
 
 .header > ul {
@@ -22,9 +23,13 @@
     gap: 1rem;
     font-size: x-large;
     width: fit-content;
+    text-align: center;
+    flex-grow: 1;
+    justify-content: center;
 }
 
-.header > img {
-    height: 50px;
-    width: 50px;
+.header img {
+    object-fit: contain;
+    height: 2.5rem;
+    width: 2.5rem;
 }

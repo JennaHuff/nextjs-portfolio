@@ -41,6 +41,8 @@ function ProjectCard({ project }: { project: IProject }) {
                     <Image
                         style={{ objectFit: "contain", position: "relative" }}
                         // fill={true}
+                        placeholder="blur"
+                        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNsqG+qBwAFCgICWH5waAAAAABJRU5ErkJggg=="
                         src={gif}
                         alt={"project preview image"}
                     />
