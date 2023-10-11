@@ -7,8 +7,9 @@ export function initBoard(): ISquare[] {
         board.push({ id: i, pawns: 0, color: "" });
     }
 
-    board[0] = { ...board[0], pawns: 2, color: "white" };
-    board[25] = { ...board[25], pawns: 2, color: "black" };
+    // prisons
+    // board[0] = { ...board[0], pawns: 0, color: "white" };
+    // board[25] = { ...board[25], pawns: 0, color: "black" };
 
     board[1] = { ...board[1], pawns: 2, color: "white" };
     board[12] = { ...board[12], pawns: 5, color: "white" };
