@@ -14,7 +14,7 @@ export function Header() {
                 <h1>React Backgammon</h1>
             </div>
             <div className="game-info-header">
-                <h3 id="turn-indicator">{gameState.turn}&apos; turn, </h3>
+                <h3 id="turn-indicator">{gameState.turn}&apos;s turn, </h3>
                 <Dice />
             </div>
         </div>
