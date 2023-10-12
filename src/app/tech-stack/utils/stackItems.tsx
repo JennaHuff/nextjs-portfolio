@@ -5,7 +5,6 @@ import GitLogo from "public/Git Logo.svg";
 import VscLogo from "public/VSC Logo.svg";
 import CssLogo from "public/CSS Logo.svg";
 import NextLogo from "public/Next Logo.svg";
-import styles from "../page.module.css";
 
 import { IStackItem } from "./types";
 import Image from "next/image";
