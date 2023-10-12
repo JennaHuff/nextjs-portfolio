@@ -51,11 +51,11 @@ export default function Header() {
                 </li>
             </ul>
             <ul>
-                <li>
+                {/* <li>
                     <Link href={""} className={styles.navLink}>
                         <Image src={mailLogo} alt="contact me!"></Image>
                     </Link>
-                </li>
+                </li> */}
                 <li>
                     <Link
                         href={"https://github.com/JennaHuff"}

@@ -1,11 +1,10 @@
 .backgammon-page {
-    min-height: 100svh;
     display: flex;
     flex-direction: column;
     gap: 1em;
     align-items: center;
     padding-inline: 2vw;
-    padding-block: 4vh;
+    padding-top: 4vh;
 }
 
 .not-empty-prison-drag-shadow {
