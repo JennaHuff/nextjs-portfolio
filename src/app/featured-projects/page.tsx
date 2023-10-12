@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import ViteLogo from "../../../public/Vite Logo.svg";
 import Image from "next/image";
 import gif from "../../../public/todo.gif";
+import Wip from "../Wip";
 
 interface IProject {
     title: string;
@@ -60,9 +61,10 @@ function ProjectCard({ project }: { project: IProject }) {
 export default function FeaturedProjects() {
     return (
         <main className={styles.featuredPage}>
-            {projects.map((project) => (
+            {/* {projects.map((project) => (
                 <ProjectCard project={project} key={project.href} />
-            ))}
+            ))} */}
+            <Wip />
         </main>
     );
 }

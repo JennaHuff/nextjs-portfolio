@@ -2,11 +2,12 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import constructionHat from "public/construction-hat.jpg";
 import Image from "next/image";
+import Wip from "../Wip";
 
 export default function About() {
     return (
         <main className={styles.aboutPage}>
-            <div className={styles.stackCard}>
+            {/* <div className={styles.stackCard}>
                 <div className={styles.currentItemLogo}>
                     <Image
                         fill={true}
@@ -27,7 +28,8 @@ export default function About() {
                         link
                     </a>
                 </div>
-            </div>
+            </div> */}
+            <Wip />
         </main>
     );
 }

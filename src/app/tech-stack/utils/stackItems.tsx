@@ -14,17 +14,17 @@ const stackItems: IStackItem[] = [
     {
         name: "Next.js",
         icon: <Image fill={true} alt="NextJs Logo" src={NextLogo} />,
-        catchphrase: "React framework",
+        catchphrase: "The leading React framework",
         description:
-            "React is an open-source front-end JavaScript library for building user interfaces based on reusable components (bricks, if you will). React can be used to develop single-page (SPA), mobile, or server-rendered (SSR) applications.",
-        docsLink: "https://react.dev/",
+            "Next.js is a popular open-source React framework for building fast and efficient web applications. It provides server-side rendering, and simplified routing, making it ideal for creating high-performance, SEO-friendly websites and applications.",
+        docsLink: "https://nextjs.org/",
     },
     {
         name: "React",
         icon: <Image fill={true} alt="React Logo" src={ReactLogo} />,
-        catchphrase: "Avoid repetitive code",
+        catchphrase: "Create dynamic web user interfaces",
         description:
-            "React is an open-source front-end JavaScript library for building user interfaces based on reusable components (bricks, if you will). React can be used to develop single-page (SPA), mobile, or server-rendered (SSR) applications.",
+            "React is an open-source front-end JavaScript library for building user interfaces based on reusable components (bricks, if you will). React can be used to develop single-page (SPA), mobile (React Native), or server-rendered (Next.js) applications.",
         docsLink: "https://react.dev/",
     },
     {
@@ -46,7 +46,7 @@ const stackItems: IStackItem[] = [
     {
         name: "Visual Studio Code",
         icon: <Image fill={true} alt="Vsc Logo" src={VscLogo} />,
-
+        catchphrase: "A rather pleasant code editor",
         description:
             "Visual Studio Code is the most popular code editor. It offers tens of thousands of extensions, and features such as syntax highlighting, automatic formatting and refactoring.",
         docsLink: "https://code.visualstudio.com/",
@@ -54,13 +54,17 @@ const stackItems: IStackItem[] = [
     {
         name: "Git",
         icon: <Image fill={true} alt="Git Logo" src={GitLogo} />,
-        description: "Version control software",
+        catchphrase: "The most important development tool",
+        description:
+            "Git is a distributed version control system that enables efficient tracking of changes in software development. It allows multiple collaborators to work on code simultaneously, with the ability to merge, branch, and maintain a detailed history of revisions. Git enhances collaboration, facilitates error tracking, and ensures code integrity.",
         docsLink: "https://git-scm.com/",
     },
     {
         name: "CSS 3",
         icon: <Image fill={true} alt="Css Logo" src={CssLogo} />,
-        description: "Good old, cascading, reliable style sheets",
+        catchphrase: "Good ol' reliable, cascading, style sheets",
+        description:
+            "CSS is used to style and format web content. It controls the visual presentation of HTML elements, defining attributes like layout, fonts, colors, and spacing. CSS enables consistent, responsive design, enhancing the appearance and user experience of websites and web applications.",
         docsLink: "https://www.w3.org/Style/CSS/learning",
     },
 ];
